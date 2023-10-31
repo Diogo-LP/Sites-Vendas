@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
 *{
     margin: 0 !important;
-    padding: 0 !important;
+    padding: 0;
+    font-family: 'Inter' !important;
+
+}
+body{
+    background-color: #FFEBD6;
 }
 header{
     display: flex;
@@ -8,14 +15,16 @@ header{
     width: 100%;
     height: 100vh;
     background-image: url(./bg.png);
-    padding: 1rem;
+    padding: 1rem 3rem;
 }
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-weight: 600;
 }
 .menu{
+    width: 87%;
     align-items: center;
     display: flex;
     justify-content: end;
@@ -23,10 +32,15 @@ nav{
 .menu ul{
     list-style: none;
     display: flex;
-    gap: 4rem;
+    gap: 5rem;
 }
 .menu ul li{
+    font-size: 1.2em;
     color: #fff;
+    transition: all .5s;
+}
+.menu ul li:hover{
+    transform: scale(1.1);
 }
 a{
     text-decoration: none;
@@ -34,4 +48,53 @@ a{
 }
 .logo{
     width: 9rem;
+}
+.title h2{
+    font-weight: 800;
+    font-size: 3em;
+    color: #FCC537;
+}
+.title{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    color: #fff;
+    font-size: 1.2em;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#sobre{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
+#sobre div.cont-sob{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 33%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #00000045;
+}
+.top-sob {
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.txt-sob{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
