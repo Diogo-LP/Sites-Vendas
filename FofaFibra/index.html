@@ -107,7 +107,7 @@
             </div>
           </div>
 
-          <div class="item-prod">
+          <div class="item-prod ">
             <div class="card border-0">
               <div class="image-wrapper"><img class="card-img-top"
                   src="img/1.png" alt="..."></div>
@@ -119,7 +119,7 @@
             </div>
           </div>
 
-          <div class="item-prod">
+          <div class="item-prod ">
             <div class="card border-0">
               <div class="image-wrapper"><img class="card-img-top"
                   src="img/1.png" alt="..."></div>
@@ -131,7 +131,7 @@
             </div>
           </div>
 
-          <div class="item-prod">
+          <div class="item-prod ">
             <div class="card border-0">
               <div class="image-wrapper"><img class="card-img-top"
                   src="img/1.png" alt="..."></div>
@@ -143,7 +143,7 @@
             </div>
           </div>
 
-          <div class="item-prod">
+          <div class="item-prod ">
             <div class="card border-0">
               <div class="image-wrapper"><img class="card-img-top"
                   src="img/1.png" alt="..."></div>
@@ -155,7 +155,7 @@
             </div>
           </div>
 
-          <div class="item-prod">
+          <div class="item-prod ">
             <div class="card border-0">
               <div class="image-wrapper"><img class="card-img-top"
                   src="img/1.png" alt="..."></div>
@@ -167,7 +167,7 @@
             </div>
           </div>
 
-          <div class="item-prod">
+          <div class="item-prod ">
             <div class="card border-0">
               <div class="image-wrapper"><img class="card-img-top"
                   src="img/1.png" alt="..."></div>
@@ -179,7 +179,7 @@
             </div>
           </div>
 
-          <div class="item-prod">
+          <div class="item-prod ">
             <div class="card border-0">
               <div class="image-wrapper"><img class="card-img-top"
                   src="img/1.png" alt="..."></div>
@@ -241,10 +241,10 @@
     window.open('https://www.instagram.com/fofafibra/', '_blank')
   })
 
-  var produtos = document.querySelectorAll('.item-prod.t')
+  var produtos = document.querySelectorAll('.itens-prod .item-prod')
 
   $('.carbtn.next').click(() => {
-    if (count == produtos.length / 4) {
+    if (count == produtos.length / 4 ) {
       count = 0
       go = count * -  parseFloat($('.item-prod').css('width'))
       promos.css('margin-left', go + 'px')
@@ -268,27 +268,28 @@
         
   })
 
-  var bicho = document.querySelectorAll('.item-prod')
+  var bicho = document.querySelectorAll('.itensProd .item-prod')
+  var countb = 0
 
 $('.carbtnP.next').click(() => {
-  if (count == bicho.length / 2) {
-    count = 0
-    go = count * -19
-    prods.css('margin-left', go + 'rem')
+  if (countb == bicho.length / 2) {
+    countb = 0
+    go = countb * - parseFloat($('.itensProd .item-prod').css('width'))
+    prods.css('margin-left', go + 'px')
   } else {
-    count++
-    go = count * -19
-    prods.css('margin-left', go + 'rem')
+    countb++
+    go = countb * - parseFloat($('.itensProd .item-prod').css('width'))
+    prods.css('margin-left', go + 'px')
   }
 })
 
 $('.carbtnP.prev').click(() => {
-  if (count == 0) {
-    count = 0
+  if (countb == 0) {
+    countb = 0
   } else {
-    count--
-    go = count * -19
-    prods.css('margin-left', go + 'rem')
+    countb--
+    go = countb * - parseFloat($('.itensProd .item-prod').css('width'))
+    prods.css('margin-left', go + 'px')
   }
 
 })

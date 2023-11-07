@@ -262,7 +262,6 @@ section{
 }
 
 footer{
-    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -429,6 +428,11 @@ footer a:hover{
     flex-direction: row !important;
     gap: 1rem;
     transition: all .5s;
+
+}
+.itensProd .item-prod{
+    width: calc((100vw / 4) - 1rem);
+    height: calc((100vw / 4) - 1rem);;
 }
 .carbtnP{
     border: none;

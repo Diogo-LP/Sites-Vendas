@@ -128,7 +128,7 @@
 <script>
   var cats = ['Camisas', 'Camisetas', 'Manga Longa', 'Plus Size']
   var sizes = ['EXG', 'GG', 'G', 'M', 'P']
-  var camisas = camisetas
+  var camisas = bones
   var cor = undefined
   var preco = undefined
 
@@ -152,7 +152,7 @@
 
     if(cor != undefined){
       camisas = []
-      for(let camisa of camisetas){
+      for(let camisa of bones){
         if(camisa.cor == cor){
           camisas.push(camisa)
         }
