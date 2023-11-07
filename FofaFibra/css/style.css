@@ -428,7 +428,7 @@ footer a:hover{
     flex-direction: row !important;
     gap: 1rem;
     transition: all .5s;
-
+    margin-left: 85rem;
 }
 .itensProd .item-prod{
     width: calc((100vw / 4) - 1rem);

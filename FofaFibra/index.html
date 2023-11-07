@@ -278,8 +278,8 @@ $('.carbtnP.next').click(() => {
     prods.css('margin-left', go + 'px')
   } else {
     countb++
-    go = countb * - parseFloat($('.itensProd .item-prod').css('width'))
-    prods.css('margin-left', go + 'px')
+    go = countb * - parseFloat($('.itensProd .item-prod').css('width'))*2.1
+    prods.css('margin-left', `calc(${go}px + 85rem)`)
   }
 })
 
@@ -289,7 +289,7 @@ $('.carbtnP.prev').click(() => {
   } else {
     countb--
     go = countb * - parseFloat($('.itensProd .item-prod').css('width'))
-    prods.css('margin-left', go + 'px')
+    prods.css('margin-left', `calc(${go}px + 85rem)`)
   }
 
 })

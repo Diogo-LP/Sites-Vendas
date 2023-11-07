@@ -72,7 +72,7 @@ var moletons = [
         nome: 'MOLETOM URBAN "WILDSTYLE"',
         preco: '149,9',
         img: "assets/img/moletons/MOD2.jpg",
-        imgtras: "assets/img/moletons/MOD2COSTAS.jpg",
+        imgtras: "assets/img/moletons/MOD2.jpg",
         cor: "p"
     }
 ]
@@ -82,6 +82,7 @@ var bones = [
         nome: 'BONÉ URBAN FIVE PANEL CORDÃO',
         preco: '59,9',
         img: "assets/img/bones/bone1.jpg",
+        imgtras: "assets/img/bones/bone1.jpg",
         cor: "p"
     }
 ]
