@@ -385,10 +385,17 @@ footer a:hover{
     border: none !important;
     background-color: transparent !important;
 }
+.image-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .card-img-top{
     border-radius: 20px;
     border-top-right-radius: 20px !important;
     border-top-left-radius: 20px !important;
+    width: 10rem;
+    height: 10rem;
 }
 .card-body{
     display: flex;
