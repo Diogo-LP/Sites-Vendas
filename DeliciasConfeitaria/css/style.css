@@ -161,6 +161,12 @@ i{
     text-align: center;
     font-weight: lighter;
 }
+.card-title-big{
+    font-weight: lighter;
+    font-size: 1.12em
+}
+
 footer{
     padding: 1rem;
 }
+
