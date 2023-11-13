@@ -297,14 +297,14 @@
   var countb = 0
 
 $('.carbtnP.next').click(() => {
-  if (countb == bicho.length / 2) {
+  if (countb == Math.ceil(bicho.length - 4)) {
     countb = 0
     go = countb * - parseFloat($('.itensProd .item-prod').css('width'))
-    prods.css('margin-left', '85rem')
+    prods.css('margin-left', '140rem')
   } else {
     countb++
     go = countb * - parseFloat($('.itensProd .item-prod').css('width'))*2.1
-    prods.css('margin-left', `calc(${go}px + 85rem)`)
+    prods.css('margin-left', `calc(${go}px + 140rem)`)
   }
 })
 
@@ -314,7 +314,7 @@ $('.carbtnP.prev').click(() => {
   } else {
     countb--
     go = countb * - parseFloat($('.itensProd .item-prod').css('width'))*2.1
-    prods.css('margin-left', `calc(${go}px + 85rem)`)
+    prods.css('margin-left', `calc(${go}px + 140rem)`)
   }
 
 })

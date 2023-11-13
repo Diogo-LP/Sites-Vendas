@@ -236,6 +236,10 @@ section{
     background-position: center;
     width: calc((100vw / 3.5));
     height: calc((100vw / 3.5));;
+    transition: all .4s;
+}
+.item-prod.t:hover{
+    transform: scale(1.03);
 }
 .carbtn{
     border: none;
@@ -430,17 +434,25 @@ footer a:hover{
     overflow-x: hidden;
     padding: 1rem;
     display: flex;
+    overflow-y: hidden;
 }
 .itensProd{
     display: flex;
     flex-direction: row !important;
     gap: 1rem;
     transition: all .5s;
-    margin-left: 85rem;
+    margin-left: 140rem;
 }
 .itensProd .item-prod{
     width: calc((100vw / 4) - 1rem);
     height: calc((100vw / 4) - 1rem);;
+    transition: all .4s;
+}
+.itensProd .item-prod:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    border-radius: 20px;
+    padding: 0rem 1rem;
 }
 .carbtnP{
     border: none;
